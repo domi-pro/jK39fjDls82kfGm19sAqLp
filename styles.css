@@ -15,7 +15,8 @@ body {
 
 .header {
   background: #9accff;
-  height: 10vh;
+  /*height: 10vh;*/
+  height: 100px;
   position: sticky;
   top: 0;
   display: flex;
@@ -34,6 +35,18 @@ body {
   font-weight: bold;
 }
 
+.footer {
+  background: #9accff;
+  height: 100px;
+  /*height: 5vh;*/
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  width: 2000px;
+  padding-left: 20px;
+}
+
 #menu-button {
   position: fixed;
   top: 100px;
@@ -42,7 +55,7 @@ body {
   border: solid 2px black;
   border-top: none;
   padding: 5px 10px;
-  font-size: 1.5rem;
+  font-size: 20px;
   cursor: pointer;
   z-index: 1;
   transform: rotate(-90deg) translateX(-100%);
@@ -60,7 +73,7 @@ body {
   position: fixed;
   top: 20;
   left: 0;
-  width: 20%;
+  width: 400px;
   height: 100vh;
   padding: 10px 15px 10px 20px;
   background: white;
@@ -96,7 +109,8 @@ body {
 .content-background {
   position: fixned;
   background: #e6e6e6;
-  width: 70%;
+  /*width: 70%;*/
+  width: 1000px;
   margin: 0 auto;
   min-height: 100vh;
   display: none;
