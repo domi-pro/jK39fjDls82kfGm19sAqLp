@@ -34,6 +34,9 @@
         by Dominika
       </p>
     </div>
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+      </div>
     <div class="homepage-content">
       <div id="menu-button">MENU</div>
       <div class="navigation" align="left">
@@ -240,6 +243,14 @@
           });
         });
       });
+      const content = document.querySelector(".content-background");
+      const loader = document.getElementById("loader");
+      setTimeout(() => {
+        if (loader) loader.style.display = "none";
+        if (content) {
+          content.style.display = "flex";
+        }
+      }, 3000);
     </script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
