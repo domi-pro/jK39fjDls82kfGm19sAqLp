@@ -1,61 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <title>O mnie | Blog Insulinooporność</title>
   </head>
   <body>
-    <div class="header" bgcolor="red">
-      <p
-        style="color: black; font-weight: bold"
-        onclick="window.location.href='index.html'"
-      >
+    <header class="header">
+      <a style="color: black; font-weight: bold" href="index.html">
         BLOG INSULINOOPORNOŚĆ
-      </p>
+      </a>
       <p style="color: white; font-family: 'Brush Script MT', cursive">
         by Dominika
       </p>
-    </div>
+    </header>
     <div class="homepage-content">
       <div id="menu-button">MENU</div>
-      <div class="navigation" align="left">
+      <nav class="navigation">
         <p style="width: 100%; text-align: right; cursor: pointer">X</p>
-        <p onclick="window.location.href='index.html'; " id="nav_link">
-          Strona główna
-        </p>
-        <p onclick="window.location.href='o-mnie.html'; " id="nav_link">
-          O mnie
-        </p>
-        <p
-          onclick="window.location.href='diagnostyka-insulinoopornosci.html';"
-          id="nav_link"
-        >
-          Diagnostyka
-        </p>
-        <p
-          onclick="window.location.href='leczenie-insulinoopornosci.html'; "
-          id="nav_link"
-        >
-          Leczenie
-        </p>
-        <p
-          onclick="window.location.href='odchudzanie-z-insulinoopornoscia.html'; "
-          id="nav_link"
-        >
-          Odchudzanie
-        </p>
-        <p
-          onclick="window.location.href='przepisy-dla-insulinoopornych.html'; "
-          id="nav_link"
-        >
-          Przepisy
-        </p>
-      </div>
+        <a href="index.html"> Strona główna </a>
+        <a href="o-mnie.html"> O mnie </a>
+        <a href="diagnostyka-insulinoopornosci.html"> Diagnostyka </a>
+        <a href="leczenie-insulinoopornosci.html"> Leczenie </a>
+        <a href="odchudzanie-z-insulinoopornoscia.html"> Odchudzanie </a>
+        <a href="przepisy-dla-insulinoopornych.html"> Przepisy </a>
+      </nav>
       <div class="content-background" style="padding-top: 20px">
         <div class="banner-without-gradient" style="width: 80%; margin: auto">
-          <img src="src/o-mnie.jpg" />
+          <img
+            src="src/o-mnie.jpg"
+            alt="Dominika Prokocka - autorka bloga o insulinnoporności"
+          />
         </div>
         <div class="text-content">
-          <p class="h1">Kim jestem?</p>
+          <h1 class="h1">Kim jestem?</h1>
           <p>
             Cześć! Mam na imię Dominika i obecnie jestem studentką studiów
             magisterskich na kierunku informatyka na SGGW w Warszawie. Zawodowo
@@ -80,7 +57,7 @@
           </p>
         </div>
         <div class="text-content">
-          <p class="h2">Moja historia z insulinoopornością</p>
+          <h2 class="h2">Moja historia z insulinoopornością</h2>
           <p>
             Moja przygoda z insulinoopornością zaczęła się trochę przypadkiem –
             i to wcale nie ode mnie. Najpierw moja mama usłyszała od swojego
@@ -104,10 +81,10 @@
           </p>
         </div>
         <div class="banner-without-gradient" style="width: 80%; margin: auto">
-          <img src="src/loose-weight.jpg" loading="lazy" />
+          <img src="src/loose-weight.jpg" loading="lazy" alt="odchudzanie" />
         </div>
         <div class="text-content">
-          <p class="h2">Porażki, próby, metformina</p>
+          <h2 class="h2">Porażki, próby, metformina</h2>
           <p>
             Przez długi czas nie potrafiłam się z tym pogodzić. Każda próba
             zmiany stylu życia kończyła się na zasadzie „wszystko albo nic”, co
@@ -134,7 +111,7 @@
           </p>
         </div>
         <div class="text-content">
-          <p class="h2">Dlaczego powstała ta strona?</p>
+          <h2 class="h2">Dlaczego powstała ta strona?</h2>
           <p>
             Z potrzeby serca. Wiem, jak trudny jest początek tej drogi – ile
             jest wątpliwości, ile sprzecznych informacji i jak łatwo się zgubić.
@@ -151,7 +128,7 @@
         </div>
       </div>
     </div>
-    <div class="footer">Autor: Dominika Prokocka</div>
+    <footer class="footer">Autor: Dominika Prokocka</footer>
     <script>
       const menuButton = document.querySelector("#menu-button");
       const navigation = document.querySelector(".navigation");

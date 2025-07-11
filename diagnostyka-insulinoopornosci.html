@@ -1,66 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <title>Diagnostyka insulinooporności | Blog Insulinooporność</title>
   </head>
   <body>
-    <div class="header" bgcolor="red">
-      <p
-        style="color: black; font-weight: bold"
-        onclick="window.location.href='index.html'"
-      >
+    <header class="header">
+      <a style="color: black; font-weight: bold" href="index.html">
         BLOG INSULINOOPORNOŚĆ
-      </p>
+      </a>
       <p style="color: white; font-family: 'Brush Script MT', cursive">
         by Dominika
       </p>
-    </div>
+    </header>
     <div class="homepage-content">
       <div id="menu-button">MENU</div>
-      <div class="navigation" align="left">
+      <nav class="navigation">
         <p style="width: 100%; text-align: right; cursor: pointer">X</p>
-        <p onclick="window.location.href='index.html'; " id="nav_link">
-          Strona główna
-        </p>
-        <p onclick="window.location.href='o-mnie.html'; " id="nav_link">
-          O mnie
-        </p>
-        <p
-          onclick="window.location.href='diagnostyka-insulinoopornosci.html';"
-          id="nav_link"
-        >
-          Diagnostyka
-        </p>
-        <p
-          onclick="window.location.href='leczenie-insulinoopornosci.html'; "
-          id="nav_link"
-        >
-          Leczenie
-        </p>
-        <p
-          onclick="window.location.href='odchudzanie-z-insulinoopornoscia.html'; "
-          id="nav_link"
-        >
-          Odchudzanie
-        </p>
-        <p
-          onclick="window.location.href='przepisy-dla-insulinoopornych.html'; "
-          id="nav_link"
-        >
-          Przepisy
-        </p>
-      </div>
+        <a href="index.html"> Strona główna </a>
+        <a href="o-mnie.html"> O mnie </a>
+        <a href="diagnostyka-insulinoopornosci.html"> Diagnostyka </a>
+        <a href="leczenie-insulinoopornosci.html"> Leczenie </a>
+        <a href="odchudzanie-z-insulinoopornoscia.html"> Odchudzanie </a>
+        <a href="przepisy-dla-insulinoopornych.html"> Przepisy </a>
+      </nav>
       <div class="content-background" style="padding-top: 20px">
-        <div class="banner"><img src="src/obesity-diagnose.jpg" /></div>
+        <div class="banner">
+          <img src="src/obesity-diagnose.jpg" alt="otyłość" />
+        </div>
         <div class="text-content">
-          <p class="h1">Diagnostyka</p>
+          <h1 class="h1">Diagnostyka</h1>
           <p>
             Dowiedz się, jak wygląda proces rozpoznania insulinooporności – od
             pierwszych objawów po badania laboratoryjne.
           </p>
         </div>
         <div class="text-content">
-          <p class="h2">Kiedy warto rozważyć badania?</p>
+          <h2 class="h2">Kiedy warto rozważyć badania?</h2>
           <p>
             Czasem nasze ciało wysyła sygnały, które łatwo zignorować —
             zmęczenie, senność, wahania nastroju czy nieustanna chęć sięgnięcia
@@ -100,10 +76,10 @@
           </p>
         </div>
         <div class="banner-without-gradient" style="width: 80%; margin: auto">
-          <img src="src/glukometr.jpg" loading="lazy" />
+          <img src="src/glukometr.jpg" loading="lazy" alt="glukometr" />
         </div>
         <div class="text-content">
-          <p class="h2">Jakie badania wykonać?</p>
+          <h2 class="h2">Jakie badania wykonać?</h2>
           <p>W diagnostyce IO najczęściej wykonuje się:</p>
           <ol>
             <li>
@@ -118,7 +94,7 @@
           </ol>
         </div>
         <div class="text-content">
-          <p class="h2">Jak wygląda badanie OGTT?</p>
+          <h2 class="h2">Jak wygląda badanie OGTT?</h2>
           <p>
             Badanie krzywej OGTT przeprowadzane jest rano, na czczo, aby wyniki
             były jak najbardziej miarodajne. Na początku pacjentowi pobierana
@@ -150,6 +126,7 @@
             src="src/glukoza_ogtt.png"
             style="width: 70%; margin: 10px auto"
             loading="lazy"
+            alt="wykres krzywej glukozowej"
           />
           <p
             style="
@@ -166,6 +143,7 @@
             src="src/insulina_ogtt.png"
             style="width: 70%; margin: 10px auto"
             loading="lazy"
+            alt="wykres krzywej insulinowej"
           />
           <p
             style="
@@ -179,7 +157,7 @@
           </p>
         </div>
         <div class="text-content">
-          <p class="h2">Interpretacja wyników badań OGTT</p>
+          <h2 class="h2">Interpretacja wyników badań OGTT</h2>
 
           <p><strong>Krzywa glukozowa (OGTT):</strong></p>
           <p>
@@ -251,20 +229,20 @@
             padding: 30px;
           "
         >
-          <p class="h2" style="margin: 20px auto">Kalkulator HOMA-IR</p>
+          <h2 class="h2" style="margin: 20px auto">Kalkulator HOMA-IR</h2>
           <label for="glukoza">Glukoza [mg/dl]</label
-          ><input type="text" name="glukoza" />
+          ><input type="text" name="glukoza" id="glukoza" />
           <label for="insulina">Insulina [mU/ml]</label
-          ><input type="text" name="insulina" />
+          ><input type="text" name="insulina" id="insulina" />
           <button id="obliczHoma" onClick="obliczHoma()">Oblicz</button>
           <p id="wynik"></p>
           <p id="komunikat" style="color: red"></p>
         </div>
         <div class="banner-without-gradient" style="width: 80%; margin: auto">
-          <img src="src/diabetologist.jpg" loading="lazy" />
+          <img src="src/diabetologist.jpg" loading="lazy" alt="diabetolog" />
         </div>
         <div class="text-content">
-          <p class="h2">Co zrobić po wykonaniu badań?</p>
+          <h2 class="h2">Co zrobić po wykonaniu badań?</h2>
           <p>
             Po uzyskaniu wyników badań, warto skonsultować się z odpowiednim
             specjalistą, który pomoże w interpretacji wyników i zaplanuje dalsze
@@ -305,7 +283,7 @@
         </div>
       </div>
     </div>
-    <div class="footer">Autor: Dominika Prokocka</div>
+    <footer class="footer">Autor: Dominika Prokocka</footer>
     <script>
       const menuButton = document.querySelector("#menu-button");
       const navigation = document.querySelector(".navigation");

@@ -5,51 +5,36 @@
   </head>
   <body bgcolor="white">
     <div class="header">
-      <p
-        style="color: black; font-weight: bold"
-        onclick="window.location.href='../../index.html'"
-      >
+      <a style="color: black; font-weight: bold" href='../../index.html'>
         BLOG INSULINOOPORNOŚĆ
-      </p>
+      </a>
       <p style="color: white; font-family: 'Brush Script MT', cursive">
         by Dominika
       </p>
     </div>
     <div class="homepage-content">
       <div id="menu-button">MENU</div>
-      <div class="navigation" align="left">
+      <nav class="navigation" align="left">
         <p style="width: 100%; text-align: right; cursor: pointer">X</p>
-        <p onclick="window.location.href='../../index.html'; " id="nav_link">
+        <a href='../../index.html' id="nav_link">
           Strona główna
-        </p>
-        <p onclick="window.location.href='../../o-mnie.html'; " id="nav_link">
+        </a>
+        <a href='../../o-mnie.html' id="nav_link">
           O mnie
-        </p>
-        <p
-          onclick="window.location.href='../../diagnostyka-insulinoopornosci.html';"
-          id="nav_link"
-        >
+        </a>
+        <a href='../../diagnostyka-insulinoopornosci.html' id="nav_link">
           Diagnostyka
-        </p>
-        <p
-          onclick="window.location.href='../../leczenie-insulinoopornosci.html'; "
-          id="nav_link"
-        >
+        </a>
+        <a href='../../leczenie-insulinoopornosci.html' id="nav_link">
           Leczenie
-        </p>
-        <p
-          onclick="window.location.href='../../odchudzanie-z-insulinoopornoscia.html'; "
-          id="nav_link"
-        >
+        </a>
+        <a href='../../odchudzanie-z-insulinoopornoscia.html' id="nav_link">
           Odchudzanie
-        </p>
-        <p
-          onclick="window.location.href='../../przepisy-dla-insulinoopornych.html'; "
-          id="nav_link"
-        >
+        </a>
+        <a href='../../przepisy-dla-insulinoopornych.html' id="nav_link">
           Przepisy
-        </p>
-      </div>
+        </a>
+      </nav>
       <div class="content-background" style="padding-top: 20px">
         <div class="banner-without-gradient">
           <img src="../../src/avocado-toast.jpg" />
@@ -57,7 +42,7 @@
         <center>Tosty z awokado i jajkiem w koszulce</center>
         <div class="text-content">
           <div class="text-content">
-            <p class="h1">Składniki</p>
+            <h1 class="h1">Składniki</h1>
             <ul>
               <li>1 kromka dobrego pieczywa (najlepiej pełnoziarnistego z niskim IG)</li>
               <li>½ dojrzałego awokado</li>
@@ -71,7 +56,7 @@
             </ul>
           </div>
           <div class="text-content">
-            <p class="h1">Przygotowanie</p>
+            <h1 class="h1">Przygotowanie</h1>
             <ul>
               <li>
                 Zagotuj wodę z odrobiną octu, zrób wir, wlej jajko i gotuj 2,5–3 minuty. Wyjmij delikatnie.
@@ -88,7 +73,7 @@
             </ul>
           </div>
           <div class="text-content">
-            <p class="h1">Wariacje podania i dodatki</p>
+            <h1 class="h1">Wariacje podania i dodatki</h1>
             <ol>
               <li><b>Z serem:</b> Dodaj pokruszoną fetę lub parmezan.</li>
               <li><b>Z pomidorem:</b> Kilka plasterków pomidora lub pomidorki koktajlowe.</li>
@@ -99,28 +84,25 @@
         </div>
       </div>
       <div class="text-content">
-        <p class="h1">Zobacz też:</p>
+        <h1 class="h1">Zobacz też:</h1>
         <div class="recipies">
-          <div
-            onclick="window.location.href='../../przepisy-dla-insulinoopornych/fritata/'"
-            class="recipe-link"
-          >
+          <a href='../../przepisy-dla-insulinoopornych/fritata/' class="recipe-link">
             <div class="recipe-block">
               <img src="../../src/fritata.jpg" loading="lazy"/>
               <p>Fritata</p>
             </div>
-          </div>
-          <div
-            onclick="window.location.href='../../przepisy-dla-insulinoopornych/gofry-pelnoziarniste/'"
+          </a>
+          <a
+            href='../../przepisy-dla-insulinoopornych/gofry-pelnoziarniste/'
             class="recipe-link"
           >
             <div class="recipe-block">
               <img src="../../src/kalafior.jpg" loading="lazy"/>
               <p>Steki z kalafiora</p>
             </div>
-          </div>
-          <div
-            onclick="window.location.href='../../przepisy-dla-insulinoopornych/twarozek/'"
+          </a>
+          <a
+            href='../../przepisy-dla-insulinoopornych/twarozek/'
             class="recipe-link"
           >
             <div class="recipe-block">
@@ -131,7 +113,7 @@
         </div>
       </div>
     </div>
-    <div class="footer">Autor: Dominika Prokocka</div>
+    <footer class="footer">Autor: Dominika Prokocka</footer>
     <script>
       const menuButton = document.querySelector("#menu-button");
       const navigation = document.querySelector(".navigation");

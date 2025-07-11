@@ -5,51 +5,32 @@
   </head>
   <body bgcolor="white">
     <div class="header">
-      <p
-        style="color: black; font-weight: bold"
-        onclick="window.location.href='../../index.html'"
-      >
+      <a style="color: black; font-weight: bold" href="../../index.html">
         BLOG INSULINOOPORNOŚĆ
-      </p>
+      </a>
       <p style="color: white; font-family: 'Brush Script MT', cursive">
         by Dominika
       </p>
     </div>
     <div class="homepage-content">
       <div id="menu-button">MENU</div>
-      <div class="navigation" align="left">
+      <nav class="navigation" align="left">
         <p style="width: 100%; text-align: right; cursor: pointer">X</p>
-        <p onclick="window.location.href='../../index.html'; " id="nav_link">
-          Strona główna
-        </p>
-        <p onclick="window.location.href='../../o-mnie.html'; " id="nav_link">
-          O mnie
-        </p>
-        <p
-          onclick="window.location.href='../../diagnostyka-insulinoopornosci.html';"
-          id="nav_link"
-        >
+        <a href="../../index.html" id="nav_link"> Strona główna </a>
+        <a href="../../o-mnie.html" id="nav_link"> O mnie </a>
+        <a href="../../diagnostyka-insulinoopornosci.html" id="nav_link">
           Diagnostyka
-        </p>
-        <p
-          onclick="window.location.href='../../leczenie-insulinoopornosci.html'; "
-          id="nav_link"
-        >
+        </a>
+        <a href="../../leczenie-insulinoopornosci.html" id="nav_link">
           Leczenie
-        </p>
-        <p
-          onclick="window.location.href='../../odchudzanie-z-insulinoopornoscia.html'; "
-          id="nav_link"
-        >
+        </a>
+        <a href="../../odchudzanie-z-insulinoopornoscia.html" id="nav_link">
           Odchudzanie
-        </p>
-        <p
-          onclick="window.location.href='../../przepisy-dla-insulinoopornych.html'; "
-          id="nav_link"
-        >
+        </a>
+        <a href="../../przepisy-dla-insulinoopornych.html" id="nav_link">
           Przepisy
-        </p>
-      </div>
+        </a>
+      </nav>
       <div class="content-background" style="padding-top: 20px">
         <div class="banner-without-gradient">
           <img src="../../src/twarozek.jpg" />
@@ -57,17 +38,16 @@
         <center>Twarożek</center>
         <div class="text-content">
           <div class="text-content">
-            <p class="h1">Składniki</p>
+            <h1 class="h1">Składniki</h1>
             <ul>
-              <li>100–150 g twarogu (półtłustego lub chudego)
-</li>
+              <li>100–150 g twarogu (półtłustego lub chudego)</li>
               <li>1–2 łyżki jogurtu naturalnego (lub śmietany, jeśli wolisz bardziej kremowy)</li>
               <li>Sól do smaku</li>
               <li>(Opcjonalnie) szczypiorek, rzodkiewka, pieprz, zioła</li>
             </ul>
           </div>
           <div class="text-content">
-            <p class="h1">Przygotowanie</p>
+            <h1 class="h1">Przygotowanie</h1>
             <ul>
               <li>
                 Wymieszaj wszystkie składniki w miseczce, aż uzyskasz pożądaną konsystencję. Gotowe!
@@ -75,7 +55,7 @@
             </ul>
           </div>
           <div class="text-content">
-            <p class="h1">Z czym podać twarożek</p>
+            <h1 class="h1">Z czym podać twarożek</h1>
             <ol>
               <li>na kanapce z pomidorem lub ogórkiem</li>
               <li>jako farsz do naleśników</li>
@@ -86,39 +66,39 @@
         </div>
       </div>
       <div class="text-content">
-        <p class="h1">Zobacz też:</p>
+        <h1 class="h1">Zobacz też:</h1>
         <div class="recipies">
-          <div
-            onclick="window.location.href='../../przepisy-dla-insulinoopornych/fritata/'"
+          <a
+            href='../../przepisy-dla-insulinoopornych/fritata/'
             class="recipe-link"
           >
             <div class="recipe-block">
               <img src="../../src/fritata.jpg" />
               <p>Fritata</p>
             </div>
-          </div>
-          <div
-            onclick="window.location.href='../../przepisy-dla-insulinoopornych/prazona-ciecierzyca/'"
+          </a>
+          <a
+            href='../../przepisy-dla-insulinoopornych/prazona-ciecierzyca/'
             class="recipe-link"
           >
             <div class="recipe-block">
               <img src="../../src/chickpeas.jpg" />
               <p>Prażona ciecierzyca</p>
             </div>
-          </div>
-          <div
-            onclick="window.location.href='../../przepisy-dla-insulinoopornych/jajka-po-turecku/'"
+          </a>
+          <a
+            href='../../przepisy-dla-insulinoopornych/jajka-po-turecku/'
             class="recipe-link"
           >
             <div class="recipe-block">
               <img src="../../src/jajka-po-turecku.jpg" />
               <p>Jajka po turecku</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
-    <div class="footer">Autor: Dominika Prokocka</div>
+    <footer class="footer">Autor: Dominika Prokocka</footer>
     <script>
       const menuButton = document.querySelector("#menu-button");
       const navigation = document.querySelector(".navigation");
